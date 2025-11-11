@@ -31,7 +31,7 @@ describe('Sign In page', () => {
     cy.get('input[placeholder="Username"]').should('exist').type(userName);
     cy.get('input[placeholder="Email"]').should('exist').type(email);
     cy.get('input[placeholder="Password"]').should('exist').type(password);
-    cy.contains('button.btn.btn-lg.btn-primary.pull-xs-right', 'Sign up')
+    cy.contains('button.btn.btn-lg.btn-primary.pull-xs-right', 'Sign in')
       .should('exist')
       .click();
     cy.contains('button', 'Ok').should('exist').click();
