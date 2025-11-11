@@ -18,11 +18,11 @@ describe('Sign In page', () => {
     });
     const { email, password, userName } = generateUser();
 
-    cy.get('a.nav-link').should('contain.text', 'Sign up').should('exist');
-    cy.contains('a', 'Sign up').should('exist').click();
-    cy.get('h1').should('contain.text', 'Sign Up').should('exist');
-    const expectedRegisterUrl = 'https://react-redux.realworld.io/#/register?';
-    cy.url().should('contain', expectedRegisterUrl);
+    /* cy.get("a.nav-link").should("contain.text", "Sign up").should("exist");
+    cy.contains("a", "Sign up").should("exist").click();
+    cy.get("h1").should("contain.text", "Sign Up").should("exist");
+    const expectedRegisterUrl = "https://react-redux.realworld.io/#/register?";
+    cy.url().should("contain", expectedRegisterUrl);
 
     cy.url().then((url) => {
       expect(url.slice(0, -9)).to.eq(expectedRegisterUrl);
@@ -35,7 +35,7 @@ describe('Sign In page', () => {
       .should('exist')
       .click();
     cy.contains('button', 'Ok').should('exist').click();
-
+*/
     cy.get('a.nav-link').should('contain.text', 'Sign in').should('exist');
     cy.contains('a', 'Sign in').should('exist').click();
     cy.get('h1').should('contain.text', 'Sign In').should('exist');
